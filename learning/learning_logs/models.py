@@ -12,6 +12,10 @@ class Topic(models.Model):
         """Return a string representation of the topi."""
         return self.text
 
+    def delete_topic(self):
+        """Delete the topic"""
+        self.delete()
+
 class Entry(models.Model):
     """ Something specific learned about a  topic. """
     # ForeignKey field'ı "çoktan-bire" ilişkiyi temsil eder. Her Entry bir topic ile ilişkilidir.
@@ -25,3 +29,7 @@ class Entry(models.Model):
     def __str__(self):
         """ Return a string representation of the model """
         return f"{self.text[:50]}..."
+
+    def delete_entry(self):
+        """Delete the entry"""
+        self.delete()

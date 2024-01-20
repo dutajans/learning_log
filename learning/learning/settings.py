@@ -31,8 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # My apps
     'learning_logs',        # Sonradan uygulama adını buraya ekliyoruz her zaman uygulamaları buraya ekliyoruz.
+    'users',
 
+    # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
