@@ -1,8 +1,46 @@
 {% extends 'learning_logs/base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <h1>Learning Log</h1>
+{% endblock page_header %}
 
 {% block content %}
+    <div class="p-3 mb-4 bg-info border rounded-3">
+        <div class="container-fluid py-4">
+            <h2 class="display-3">Welcome to Learning Log</h2>
+            <p class="lead">Track your learning journey with Learning Log. Create your own log and keep a list of the topics you're learning about. Whenever you learn something new, make an entry to summarize what you've learned.</p>
+            <p class="lead">Learning Log helps you organize your learning process and track your progress over time. It's the perfect tool for anyone who loves to learn.</p>
 
-<h2 style="text-align:center">Learning Log</h2>
-<p style="text-align:center">Lerning Log helps you keep track of your learning, For any topic you're learning about.</p>
+            <a class="btn btn-success btn-lg mt-3" href="{% url 'users:register' %}">Get Started &raquo;</a>
+        </div>
+    </div>
 
 {% endblock content %}
+
+
+{% block footer %}
+    <footer class="bg-light text-dark py-4">
+        <div class="container">
+            <p style="text-align:center">&copy; 2024 Learning Log. All rights reserved.</p>
+            <p style="text-align:center">Contact us at: contact@learninglog.com</p>
+            <div class="social-media" style="text-align:center">
+                <a href="https://instagram.com" class="btn btn-outline-dark btn social mx-1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" class="btn btn-outline-dark btn social mx-1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://youtube.com" class="btn btn-outline-dark btn social mx-1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://linkedin.com" class="btn btn-outline-dark btn social mx-1" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </footer>
+
+{% endblock footer %}

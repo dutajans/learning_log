@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'learning_logs',        # Sonradan uygulama adını buraya ekliyoruz her zaman uygulamaları buraya ekliyoruz.
     'users',
 
+    # Third party
+    'django_bootstrap5',
+
     # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,6 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
