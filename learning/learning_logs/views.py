@@ -104,3 +104,7 @@ def delete_topic(request, topic_id):
     topic = Topic.objects.get(id=topic_id)
     topic.delete_topic()
     return redirect('learning_logs:topics')
+
+
+def about(request):
+    return render(request, 'learning_logs/about.html')

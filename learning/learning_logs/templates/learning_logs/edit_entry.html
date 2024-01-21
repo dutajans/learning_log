@@ -8,7 +8,7 @@
 {% extends 'learning_logs/base.html' %}
 
 {% block page_header %}
-    <p>Return to <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
+    <p>Return to <a class="btn btn-primary" href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
 {% endblock page_header %}
 
 {% block content %}
